@@ -22,7 +22,9 @@ let factorial = function f(n){
     return f(n-1)*n ; 
 }
 
-factorial(5) ;
+factorial(5); // 120
+
+
 
 // let s = "Prasad";
 // for (let i = 0; i < s.length; i++) {
@@ -33,13 +35,42 @@ factorial(5) ;
 
 // }
 
-const st = (n)=>{
-    for(let i = 0; i < n; i++) {
-        setTimeout(()=>{
-            process.stdout.write(`${i} `);
+// const st = (n)=>{
+//     for(let i = 0; i < n; i++) {
+//         setTimeout(()=>{
+//             process.stdout.write(`${i} `);
 
-        } , n*1000);
+//         } , n*1000);
+//     }
+// }
+// st(10);
+
+let a = "a" ; 
+let z = "z" ;
+    let start = a.charCodeAt(0);
+    let end = z.charCodeAt(0);
+
+    if (start > end) {
+        [start, end] = [end, start]; // swap if needed
     }
-}
-st(10);
+
+    for (let i = start + 1; i <= end; i++) {
+        console.log(String.fromCharCode(i));
+    }
+
+    let nn = "Prasad";
+    console.log(nn[0]); // 801
+
+    let ns = Math.floor(Math.random() * (15-5+1))+5;
+    console.log(ns);
+
+let ch = String.fromCharCode(65);
+console.log(ch); // A
+let ch1 = String.fromCharCode(97);
+console.log(ch1); // a
+
+let m = "Happy";
+let n = "pxpy";
+let m1 = m.indexOf(n);
+console.log(m1); // 2
 
